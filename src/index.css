@@ -7,7 +7,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #F7F4EF;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -31,6 +31,7 @@
   --drop-shadow-black: 4px 4px 0px black;
   --drop-shadow-blue: 4px 4px 0px #4039E9;
   --drop-shadow-lg: 8px 8px 0px var(--main-drop-shadow-color);
+  --drop-shadow-desktop-lg: 16px 16px 0px var(--main-drop-shadow-color);
   --drop-shadow-sm: 2px 2px 0px var(--main-drop-shadow-color);
 }
 

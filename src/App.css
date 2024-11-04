@@ -1,8 +1,12 @@
 /* mobile first css */
 
+
+
 body{
   background-color: #F7F4EF;
   color: #000;
+  max-width: 1440px;
+  margin: auto;
 }
 
 /* Hero Section */
@@ -11,7 +15,7 @@ body{
   width: 100%;
   background-color: var(--secondary-bg-color);
   color: var(--main-text-color);
-  padding: 16px;
+  padding: 1rem;
   border-bottom: 4px solid var(--main-border-color);
 }
 
@@ -71,7 +75,7 @@ body{
 
 /* Status Section */
 .status{
-  padding: 0px 16px ;
+  padding: 0rem 1rem ;
   margin: 1.25rem 0rem;
 }
 
@@ -133,7 +137,7 @@ body{
 /* About Me Section */
 
 .about-me{
-  padding: 16px;
+  padding: 1rem;
 }
 
 .about-me .headline{
@@ -253,4 +257,211 @@ body{
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 1rem;
+}
+
+/* --------------------------- */
+
+/* Project Section */
+
+.project{
+  padding: 1rem;
+}
+
+.project .headline{
+  margin-bottom: 1.5rem;
+}
+
+/* media query desktop will be will be two columns 	grid-template-columns: repeat(2, minmax(0, 1fr)); */
+.project .project-wrapper{
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.project-card{
+  padding: 1rem;
+  background-color: var(--main-bg-color);
+  border-radius: 0.5rem;
+  box-shadow: var(--drop-shadow);
+  border: 1px solid var(--main-border-color);
+}
+
+.project-card .header{
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.project-card .project-mockup{
+  width: 100%;
+}
+
+.project-card .footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-card .project-description{
+  margin-top: 1rem;
+}
+
+.project-card .like-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* --------------------------- */
+
+/* Social Media Section */
+
+.social-media{
+  padding: 2rem 1rem;
+  background-color: var(--secondary-bg-color);
+  margin-top: 3.5rem;
+}
+
+.social-media h4{
+  font-size: 0.875rem;
+}
+
+.social-media .social-media-wrapper{
+  display: flex;
+  margin-top: 1rem;
+  gap: 0.75rem;
+}
+
+.social-media .social-media-card{
+  display: flex;
+  padding: 1rem;
+  background-color: var(--main-bg-color);
+  border: 1px solid var(--main-border-color);
+  border-radius: 8px;
+  box-shadow: var(--drop-shadow);
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.social-media .social-media-card .social-media-text p{
+  font-size: 0.625rem;
+}
+
+.social-media-card img{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+
+@media (min-width:1024px){
+  .hero{
+    padding: 3rem;
+  }
+  .hero .wrapper .namecard h4{
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  .hero .wrapper .namecard p{
+    font-size: 2rem;
+    font-weight: 200;
+  }
+  .hero .wrapper .namecard{
+    flex-basis: 75%;
+    padding: 1.75rem;
+    box-shadow: var(--drop-shadow-lg);
+  }
+  .hero .title{
+    font-size: 7rem;
+    box-shadow: var(--drop-shadow-desktop-lg);
+  }
+  .hero .year{
+    font-size: 7rem;
+    text-shadow: 
+    -3px -3px 0 black,
+    3px -3px 0 black,
+    -3px  3px 0 black,
+     3px  3px 0 black; /* Fallback for other browsers */
+  }
+  .hero .wrapper img{
+    width: 16em;
+  }
+  .hero .wrapper img{
+    bottom: -3rem;
+  }
+  .status .role{
+    font-size: 1.5rem;
+    gap: 1rem;
+  }
+  .status{
+    padding: 0rem 4rem ;
+    margin: 2rem 0rem;
+  }
+  .status .information{
+    display: flex;
+    gap: 8rem;
+    text-align: center;
+    margin: 2.75rem 0rem;
+    justify-content: center;
+  }
+  
+  .status .information .number{
+    font-size: 3.5rem;
+    margin-bottom: 0.875rem;
+    font-weight: 500;
+  }
+  .status .information .text{
+    font-size: 1.25rem;
+  }
+  .about-me .headline h2{
+    font-size: 2.25rem;
+  }
+  .about-me .headline p{
+    font-size: 1.25rem;
+  }
+  .project .project-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 3rem;
+  }
+  .experience-card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 3rem;
+  }
+  .intro-wrapper{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 3rem;
+    display: grid;
+  }
+  .social-media{
+    padding: 4rem 2rem;
+    background-color: var(--secondary-bg-color);
+    margin-top: 5rem auto;
+    text-align: center;
+  }
+  .social-media h4{
+    font-size: 1.75rem;
+  }
+  .social-media .social-media-wrapper{
+    display: flex;
+    margin-top: 1rem;
+    gap: 2rem;
+    justify-content: center;
+
+  }
+  .social-media .social-media-card .social-media-text p{
+    font-size: 1.25rem;
+  }
+  .social-media-card img{
+    width: 3rem;
+    height: 3rem;
+  }
+  .social-media .social-media-card{
+    gap: 3rem;
+    text-align: left;
+  }
 }
