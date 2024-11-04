@@ -29,6 +29,7 @@
   --secondary-border-color:#4039E9;
   --drop-shadow: 4px 4px 0px var(--main-drop-shadow-color);
   --drop-shadow-black: 4px 4px 0px black;
+  --drop-shadow-blue: 4px 4px 0px #4039E9;
   --drop-shadow-lg: 8px 8px 0px var(--main-drop-shadow-color);
   --drop-shadow-sm: 2px 2px 0px var(--main-drop-shadow-color);
 }

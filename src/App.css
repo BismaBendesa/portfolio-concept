@@ -115,6 +115,7 @@ body{
   gap: 2.5rem;
   text-align: center;
   margin: 2.75rem 0rem;
+  justify-content: center;
 }
 
 .status .information .number{
@@ -125,4 +126,131 @@ body{
 
 .status .information .text{
   font-size: 0.75rem;
+}
+
+/* --------------------------- */
+
+/* About Me Section */
+
+.about-me{
+  padding: 16px;
+}
+
+.about-me .headline{
+  margin-bottom: 1.5rem;
+}
+
+.about-me .about-me-section .title-blue,.about-me .about-me-section .title-black{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0rem;
+}
+
+.about-me .about-me-section .title-blue .line-blue{
+  display: flex;
+  align-items: center;
+  height: 1px;
+  width: 100%;
+  background-color: var(--additional-bg-color);
+}
+
+.about-me .about-me-section .title-black .line-black{
+  display: flex;
+  align-items: center;
+  height: 1px;
+  width: 100%;
+  background-color: var(--tertiary-bg-color);
+}
+
+.about-me .about-me-section span{
+  font-size: 1.75rem;
+  color: var(--tertiary-text-color);
+  font-weight: 500;
+  text-align: right;
+}
+
+.about-me .about-me-section .title-black span{
+  color: var(--main-text-color) ;
+}
+
+.about-me .about-me-section .description{
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: var(--additional-bg-color);
+  color: var(--secondary-text-color);
+  box-shadow: var(--drop-shadow);
+  font-weight: 300;
+  border-radius: 0.5rem;
+  text-align: justify;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+.about-me .about-me-section h3{
+  color : var(--tertiary-text-color);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-me .about-me-section .tools{
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+} 
+
+.about-me .about-me-section .tools-card{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--secondary-border-color);
+  border-radius: 0.5rem;
+  box-shadow: var(--drop-shadow-blue);
+  background: transparent;
+}
+
+.about-me .about-me-section .tools-card img{
+  width: 2rem;
+}
+
+.about-me .about-me-section .tools-card p{
+  color: var(--tertiary-text-color);
+}
+
+.about-me .about-me-section .uiux-tools{
+  margin: 1rem 0rem;
+}
+
+.experience-card {
+  background-color: var(--tertiary-bg-color);
+  color: var(--secondary-text-color);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: justify;
+}
+
+.experience-card img{
+  margin-bottom: 0.5rem;
+}
+
+.about-me .about-me-section .experience-card h3{
+  color: var(--secondary-text-colors);
+  margin: 0;
+}
+
+.experience-card .duration{
+  margin-bottom: 0.5rem;
+}
+
+.experience-card ol{
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+}
+
+/* media query desktop will be will be two columns 	grid-template-columns: repeat(2, minmax(0, 1fr)); */
+.experience-card-wrapper{
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1rem;
 }
