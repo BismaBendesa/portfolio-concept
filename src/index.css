@@ -17,17 +17,18 @@
   /* Theme Variable */
   --main-bg-color: #ffffff;
   --secondary-bg-color: #CCEA54;
+  --tertiary-bg-color : #2B2B28;
+  --additional-bg-color : #4039E9;
   --main-text-color : #000000;
   --secondary-text-color:#ffffff;
   --tertiary-text-color: #4039E9;
   --additional-text-color : #CCEA54;
-  --tertiary-bg-color : #2B2B28;
-  --tertiary-bg-color : #4039E9;
   --main-drop-shadow-color: #2B2B28;
   --secondary-drop-shadow-color: #2B2B28;
   --main-border-color:#2B2B28;
   --secondary-border-color:#4039E9;
   --drop-shadow: 4px 4px 0px var(--main-drop-shadow-color);
+  --drop-shadow-black: 4px 4px 0px black;
   --drop-shadow-lg: 8px 8px 0px var(--main-drop-shadow-color);
   --drop-shadow-sm: 2px 2px 0px var(--main-drop-shadow-color);
 }
