@@ -1,5 +1,5 @@
 import React from 'react'
-import instagram from '../assets/instagram.png'
+import github from '../assets/github.png'
 import linkedIn from '../assets/linkedIn.png'
 import dribbble from '../assets/dribbble.png'
 
@@ -18,12 +18,12 @@ export default function SocialMedia() {
           </div>
           <img src={linkedIn} alt="dribbble" />
         </a>
-        <a href='https://www.instagram.com/bendesabisma/' className="social-media-card">
+        <a href='https://github.com/BismaBendesa' className="social-media-card">
           <div className='social-media-text'>
-            <h4>Instagram</h4>
+            <h4>Github</h4>
             <p>Bisma Bendesa</p>
           </div>
-          <img src={instagram} alt="dribbble" />
+          <img src={github} alt="dribbble" />
         </a>
         <a href='https://dribbble.com/BismaBendesa' className="social-media-card">
           <div className='social-media-text'>

@@ -5,8 +5,12 @@
 body{
   background-color: #F7F4EF;
   color: #000;
-  max-width: 1440px;
   margin: auto;
+}
+
+a{
+  text-decoration: none;
+  color: black;
 }
 
 /* Hero Section */
@@ -16,6 +20,13 @@ body{
   background-color: var(--secondary-bg-color);
   color: var(--main-text-color);
   padding: 1rem;
+  /* border-bottom: 4px solid var(--main-border-color); */
+  max-width: 1440px;
+  margin: 0px auto;
+}
+.hero-wrapper{
+  width: 100%;
+  background-color: var(--secondary-bg-color);
   border-bottom: 4px solid var(--main-border-color);
 }
 
@@ -77,6 +88,7 @@ body{
 .status{
   padding: 0rem 1rem ;
   margin: 1.25rem 0rem;
+  /* max-width: 1440px;   */
 }
 
 .status .role{
@@ -293,8 +305,16 @@ body{
   margin-bottom: 1rem;
 }
 
+.project-card .header img{
+  max-height: 31px;
+}
+
 .project-card .project-mockup{
   width: 100%;
+  border-radius: 10px ;
+  border: 1px solid #cacaca;
+  margin-bottom: 1rem;
+  max-height: 300px;
 }
 
 .project-card .footer{
@@ -304,7 +324,7 @@ body{
 }
 
 .project-card .project-description{
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
 }
 
 .project-card .like-wrapper{
@@ -312,6 +332,30 @@ body{
   align-items: center;
   gap: 0.5rem;
   margin-top: 1rem;
+}
+
+.project-card .links{
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.project-card .links a{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: .5rem;
+  border: 1.5px solid #6c6c6c;
+  padding: .5rem 1rem;
+  flex-basis: 1 1 auto;
+  border-radius: 8px;
+  width: fit-content;
+  flex-wrap: wrap;
+}
+
+.project-card .links img{
+  width: 2rem;
 }
 
 /* --------------------------- */
@@ -402,7 +446,8 @@ body{
   }
   .status{
     padding: 0rem 4rem ;
-    margin: 2rem 0rem;
+    margin: 2rem auto;
+    max-width: 1440px;
   }
   .status .information{
     display: flex;
@@ -420,12 +465,21 @@ body{
   .status .information .text{
     font-size: 1.25rem;
   }
+  .about-me{
+    max-width: 1440px;
+    margin:0px auto;
+  }
   .about-me .headline h2{
     font-size: 2.25rem;
   }
   .about-me .headline p{
     font-size: 1.25rem;
   }
+  .project{
+    max-width: 1440px;
+    margin: 0px auto;
+  }
+
   .project .project-wrapper{
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -444,7 +498,7 @@ body{
   .social-media{
     padding: 4rem 2rem;
     background-color: var(--secondary-bg-color);
-    margin-top: 5rem auto;
+    margin: 5rem auto 0rem auto;
     text-align: center;
   }
   .social-media h4{
