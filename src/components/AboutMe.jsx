@@ -9,6 +9,8 @@ import tailwind from '../assets/tailwind.png'
 import zettabyte from '../assets/zettabyte.png'
 import destar from '../assets/destar.png'
 import serene from '../assets/serene.png'
+import streamlit from '../assets/streamlit.png'
+import python from '../assets/python.png'
 
 export default function AboutMe() {
   return (
@@ -25,7 +27,7 @@ export default function AboutMe() {
               <span>Introduction</span>
             </div>
             <div className="description">
-              <p>I am Bisma. 21 years old, Third Year College Student in Udayana majoring Informatics based in Bali, Indonesia. I started my journey in IT Industry since high vocational school since I was 18 years old. I am capable to design website as a UI/UX Designer, And I am also a Fullstack Website Developer. I also have some hobbies like playing guitar, playing video games, and working out. Happy to see you guys here! Come and have a look!</p>
+              <p>I am Bisma. 21 years old, Third Year College Student in Udayana majoring Informatics based in Bali, Indonesia. I started my journey in IT Industry since high vocational school since I was 18 years old. I am capable to design website as a UI/UX Designer, a Fullstack Website Developer. I have some experience in basic python and data skills too. I also have some hobbies like playing guitar, playing video games, and working out. Happy to see you guys here! Come and have a look!</p>
             </div>
           </div>
           <div>
@@ -66,6 +68,17 @@ export default function AboutMe() {
                 <div className='tools-card'>
                   <img src={javascript} alt="Vanilla Javascript" />
                   <p>VanillaJs</p>
+                </div>
+              </div>
+              <h3>Data </h3>
+              <div className='tools'>
+                <div className='tools-card'>
+                  <img src={python} alt="python" />
+                  <p>Python</p>
+                </div>
+                <div className='tools-card'>
+                  <img src={streamlit} alt="streaamlit" />
+                  <p>Streamlit</p>
                 </div>
               </div>
             </div>
